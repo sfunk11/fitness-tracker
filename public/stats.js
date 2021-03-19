@@ -186,6 +186,7 @@ function calculateTotalWeight(data) {
     }, 0);
 
     totals.push(workoutTotal);
+    console.log(workoutTotal);
   });
 
   return totals;

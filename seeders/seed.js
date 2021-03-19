@@ -8,7 +8,8 @@ mongoose.connect("mongodb://localhost/workout", {
 
 let workoutSeed = [
   {
-    day: new Date().setDate(new Date().getDate()-10),
+    totalDuration: 20,
+    day: new Date().setDate(new Date().getDate()-8),
     exercises: [
       {
         type: "resistance",
@@ -21,7 +22,8 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date().setDate(new Date().getDate()-9),
+    totalDuration: 20,
+    day: new Date().setDate(new Date().getDate()-7),
     exercises: [
       {
         type: "resistance",
@@ -34,7 +36,8 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date().setDate(new Date().getDate()-8),
+    totalDuration: 25,
+    day: new Date().setDate(new Date().getDate()-6),
     exercises: [
       {
         type: "resistance",
@@ -47,7 +50,8 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date().setDate(new Date().getDate()-7),
+    totalDuration: 25,
+    day: new Date().setDate(new Date().getDate()-5),
     exercises: [
       {
         type: "cardio",
@@ -58,7 +62,8 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date().setDate(new Date().getDate()-6),
+    totalDuration: 20,
+    day: new Date().setDate(new Date().getDate()-4),
     exercises: [
       {
         type: "resistance",
@@ -71,7 +76,8 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date().setDate(new Date().getDate()-5),
+    totalDuration: 20,
+    day: new Date().setDate(new Date().getDate()-3),
     exercises: [
       {
         type: "resistance",
@@ -84,7 +90,8 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(new Date().setDate(new Date().getDate() - 4)),
+    totalDuration: 30,
+    day: new Date(new Date().setDate(new Date().getDate() - 2)),
     exercises: [
       {
         type: "resistance",
@@ -97,7 +104,8 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(new Date().setDate(new Date().getDate() - 3)),
+    totalDuration: 20,
+    day: new Date(new Date().setDate(new Date().getDate() - 1)),
     exercises: [
       {
         type: "resistance",
@@ -110,13 +118,14 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(new Date().setDate(new Date().getDate() - 2)),
+    totalDuration: 20,
+    day: new Date(new Date().setDate(new Date().getDate())),
     exercises: [
       {
         type: "resistance",
         name: "Military Press",
         duration: 20,
-        weight: 300,
+        weight: 100,
         reps: 10,
         sets: 4
       }
